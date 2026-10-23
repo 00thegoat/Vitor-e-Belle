@@ -445,13 +445,13 @@ const CONFIG = {
   musicas: {
     // Coloque os arquivos .mp3 na pasta "musicas" com estes nomes.
     // Sem o arquivo, o site toca uma caixinha de música suave no lugar.
-    navegacao: { src: "musicas/foi-assim.mp3", titulo: "Foi Assim", artista: "Sotam",
+    navegacao: { src: "foi-assim.mp3", titulo: "Foi Assim", artista: "Sotam",
       link: "https://open.spotify.com/search/Foi%20Assim%20Sotam" },
-    final: { src: "musicas/2-much.mp3", titulo: "2 Much", artista: "Justin Bieber",
+    final: { src: "2-much.mp3", titulo: "2 Much", artista: "Justin Bieber",
       link: "https://open.spotify.com/search/2%20Much%20Justin%20Bieber" }
   },
-  videos: ["videos/video-2.mp4", "videos/video-1.mp4"],
-  posters: ["videos/video-2.jpg", "videos/video-1.jpg"],
+  videos: ["video-2.mp4", "video-1.mp4"],
+  posters: ["video-2.jpg", "video-1.jpg"],
 
   presentes: [
     { id:1, nome:"Nossa primeira lembrança", c1:"#f8d3df", c2:"#e795b3", rb:"#fff4f7" },
@@ -463,25 +463,25 @@ const CONFIG = {
     { id:7, nome:"A grande surpresa", c1:"#fdf3e1", c2:"#e8d2a8", rb:"#c9a253" }
   ],
 
-  p1: { foto:"fotos/primeira-flor.jpg", legenda:"A primeira flor ♡",
+  p1: { foto:"primeira-flor.jpg", legenda:"A primeira flor ♡",
     msg:"Algumas pessoas chegam sem avisar e acabam mudando tudo. Você foi a melhor surpresa que a vida me deu." },
 
   p2: { msg:"Se eu pudesse guardar todos os momentos felizes da minha vida em uma caixa, a maioria deles teria você.",
     fotos:[
-      { src:"fotos/selfie-jaqueta.jpg", legenda:"Essa carinha", quando:"Um dia qualquer que virou especial", verso:"Seu sorriso de canto é o meu lugar preferido no mundo." },
-      { src:"fotos/elevador-beijinho.jpg", legenda:"Biquinho oficial", quando:"No elevador", verso:"Até num elevador você consegue deixar tudo mais bonito." },
-      { src:"fotos/elevador-abraco.jpg", legenda:"Pertinho de você", quando:"Coladinhos", verso:"Do seu lado é onde eu fico mais em paz." },
-      { src:"fotos/espelho-corredor.jpg", legenda:"Combinando sem combinar", quando:"Antes de sair", verso:"Os dois de preto, e mesmo assim só você brilhava." },
-      { src:"fotos/coracao-no-vidro.jpg", legenda:"Belle & 00", quando:"No vidro embaçado", verso:"Escrevi no vidro do carro, mas tá escrito em mim pra sempre." },
-      { src:"fotos/show-juntos.jpg", legenda:"Noite de festa", quando:"No meio da multidão", verso:"Tinha gente pra todo lado. Eu só via você." },
-      { src:"fotos/surpresa-luz-roxa.jpg", legenda:"Essa surpresa", quando:"Luz roxa, coração acelerado", verso:"Essa sua carinha de surpresa eu guardo aqui dentro." },
-      { src:"fotos/elevador-tremido.jpg", legenda:"Tremida e perfeita", quando:"Rindo à toa", verso:"Nem toda foto sai boa. Todo momento com você sai." },
-      { src:"fotos/com-os-pequenos.jpg", legenda:"Um spoiler do futuro", quando:"Nossos filhos, segundo a IA", verso:"Um menino e uma menina com o seu sorriso. Hoje é só imaginação. Um dia vai ser a nossa vida." },
-      { src:"fotos/com-a-pequena.jpg", legenda:"Tarde de brincadeira", quando:"Bonecas de cabelo rosa", verso:"Seu jeito doce aparece até quando você nem percebe." },
-      { src:"fotos/passeio-noite.jpg", legenda:"Atrás de você", quando:"Passeio à noite", verso:"Eu seguiria você pra qualquer lugar. Olha a prova aí." }
+      { src:"selfie-jaqueta.jpg", legenda:"Essa carinha", quando:"Um dia qualquer que virou especial", verso:"Seu sorriso de canto é o meu lugar preferido no mundo." },
+      { src:"elevador-beijinho.jpg", legenda:"Biquinho oficial", quando:"No elevador", verso:"Até num elevador você consegue deixar tudo mais bonito." },
+      { src:"elevador-abraco.jpg", legenda:"Pertinho de você", quando:"Coladinhos", verso:"Do seu lado é onde eu fico mais em paz." },
+      { src:"espelho-corredor.jpg", legenda:"Combinando sem combinar", quando:"Antes de sair", verso:"Os dois de preto, e mesmo assim só você brilhava." },
+      { src:"coracao-no-vidro.jpg", legenda:"Belle & 00", quando:"No vidro embaçado", verso:"Escrevi no vidro do carro, mas tá escrito em mim pra sempre." },
+      { src:"show-juntos.jpg", legenda:"Noite de festa", quando:"No meio da multidão", verso:"Tinha gente pra todo lado. Eu só via você." },
+      { src:"surpresa-luz-roxa.jpg", legenda:"Essa surpresa", quando:"Luz roxa, coração acelerado", verso:"Essa sua carinha de surpresa eu guardo aqui dentro." },
+      { src:"elevador-tremido.jpg", legenda:"Tremida e perfeita", quando:"Rindo à toa", verso:"Nem toda foto sai boa. Todo momento com você sai." },
+      { src:"com-os-pequenos.jpg", legenda:"Um spoiler do futuro", quando:"Nossos filhos, segundo a IA", verso:"Um menino e uma menina com o seu sorriso. Hoje é só imaginação. Um dia vai ser a nossa vida." },
+      { src:"com-a-pequena.jpg", legenda:"Tarde de brincadeira", quando:"Bonecas de cabelo rosa", verso:"Seu jeito doce aparece até quando você nem percebe." },
+      { src:"passeio-noite.jpg", legenda:"Atrás de você", quando:"Passeio à noite", verso:"Eu seguiria você pra qualquer lugar. Olha a prova aí." }
     ] },
 
-  p3: { foto:"fotos/buque-carro.jpg", msg:"Esses são só dez. A lista inteira não cabe em nenhuma caixa.",
+  p3: { foto:"buque-carro.jpg", msg:"Esses são só dez. A lista inteira não cabe em nenhuma caixa.",
     motivos:[
       ["Sua paciência","Você tem uma paciência comigo que eu nem sabia que alguém podia ter."],
       ["Sua dedicação","Você se entrega por inteiro em tudo, inclusive na gente."],
@@ -495,23 +495,23 @@ const CONFIG = {
       ["Simplesmente você","Simplesmente por ser você. Do jeitinho que você é."]
     ] },
 
-  p4: { foto:"fotos/elevador-abraco.jpg",
+  p4: { foto:"elevador-abraco.jpg",
     dedicatoria:"Toda vez que essa música tocar, é você que eu vou lembrar.",
     msg:"Existem músicas que a gente escuta. E existem músicas que fazem a gente sentir. Essa sempre vai me lembrar de você." },
 
   p5: { msg:"Minha parte favorita de cada aventura nunca foi o lugar. Sempre foi ter você comigo.",
     momentos:[
-      { data:"18 de fevereiro", titulo:"O dia em que a gente se conheceu", foto:"fotos/show-juntos.jpg", legenda:"Onde tudo começou",
+      { data:"18 de fevereiro", titulo:"O dia em que a gente se conheceu", foto:"show-juntos.jpg", legenda:"Onde tudo começou",
         texto:"Uma festa, um contato em comum e eu criando coragem pra chegar em você. A gente ficou, e o nosso primeiro beijo foi ali. Aí deu confusão, apareceu um amigo seu querendo o mesmo que eu, e o seu Gangster foi lá te defender. Desde aquela noite eu já sabia que ia querer cuidar de você." },
-      { data:"Logo depois", titulo:"A primeira flor", foto:"fotos/primeira-flor.jpg", legenda:"Rosas no colo",
+      { data:"Logo depois", titulo:"A primeira flor", foto:"primeira-flor.jpg", legenda:"Rosas no colo",
         texto:"Rosas vermelhas no seu colo, pôr do sol na estrada e você sorrindo de um jeito que eu nunca mais esqueci." },
-      { data:"Nossos rolês", titulo:"Espelhos, elevadores e a gente", foto:"fotos/elevador-beijinho.jpg", legenda:"Mais uma de elevador",
+      { data:"Nossos rolês", titulo:"Espelhos, elevadores e a gente", foto:"elevador-beijinho.jpg", legenda:"Mais uma de elevador",
         texto:"A gente tem mais foto em elevador do que em qualquer outro lugar. E eu não trocaria nenhuma." },
-      { data:"Uma noite qualquer", titulo:"Belle & 00", foto:"fotos/coracao-no-vidro.jpg", legenda:"No vidro do carro",
+      { data:"Uma noite qualquer", titulo:"Belle & 00", foto:"coracao-no-vidro.jpg", legenda:"No vidro do carro",
         texto:"Um coração desenhado no vidro embaçado. Simples assim, do nosso jeito." },
-      { data:"18 de setembro", titulo:"O pedido", foto:"fotos/buque-beijo.jpg", legenda:"O dia do sim",
+      { data:"18 de setembro", titulo:"O pedido", foto:"buque-beijo.jpg", legenda:"O dia do sim",
         texto:"Lírios, rosas e eu morrendo de nervoso. Você disse sim, e esse virou um dos momentos mais emocionantes da minha vida." },
-      { data:"18 de outubro", titulo:"Um mês de nós", foto:"fotos/buque-carro.jpg", legenda:"O primeiro de muitos",
+      { data:"18 de outubro", titulo:"Um mês de nós", foto:"buque-carro.jpg", legenda:"O primeiro de muitos",
         texto:"E aqui estamos. O primeiro mês de todos os que eu quero viver com você." }
     ] },
 
@@ -520,14 +520,14 @@ const CONFIG = {
       { t:"Casar com você", d:"Um dia eu vou te esperar no altar. E vou chorar, já te aviso.", x:22, y:24 },
       { t:"Uma vida tranquila", d:"Viver muito bem, sem aperto, pra gente aproveitar tudo junto.", x:70, y:16 },
       { t:"Felizes com o que fazemos", d:"Os dois realizados no que escolheram, um torcendo pelo outro.", x:50, y:44 },
-      { t:"Um casal de filhos", d:"Um menino e uma menina com o seu coração puro. A IA já deu um spoiler de como eles vão ser.", foto:"fotos/com-os-pequenos.jpg", x:16, y:62 },
+      { t:"Um casal de filhos", d:"Um menino e uma menina com o seu coração puro. A IA já deu um spoiler de como eles vão ser.", foto:"com-os-pequenos.jpg", x:16, y:62 },
       { t:"O salsicha mofado", d:"Nosso cachorro salsicha. Mofado. Isso não está aberto a negociação.", x:82, y:52 },
       { t:"O mundo de mãos dadas", d:"Conhecer lugares novos e tirar mil fotos tremidas pelo caminho.", x:36, y:82 },
       { t:"Escolher você", d:"Em todos os dias que ainda vão vir, continuar escolhendo você.", x:74, y:80 }
     ] },
 
   p7: {
-    foto:"fotos/buque-beijo.jpg",
+    foto:"buque-beijo.jpg",
     carta:
 `Amor,
 
